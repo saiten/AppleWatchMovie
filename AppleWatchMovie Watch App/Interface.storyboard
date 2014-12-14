@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchMovie_Watch_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="center" title="Play" id="4Zc-eq-fwF">
+                            <connections>
+                                <action selector="playPauseButtonTapped:" destination="AgC-eL-Hgc" id="nm4-49-tdV"/>
+                            </connections>
+                        </button>
+                        <imageView width="1" height="100" alignment="center" verticalAlignment="bottom" id="mPw-QT-dYq"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="mPw-QT-dYq" id="3nD-MM-TAq"/>
+                        <outlet property="playPauseButton" destination="4Zc-eq-fwF" id="GaO-yJ-UIL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="461" y="397"/>
+        </scene>
+    </scenes>
+</document>
